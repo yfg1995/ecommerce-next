@@ -14,9 +14,9 @@ import Link from "next/link";
 import { buttonVariants } from "../ui/Button";
 import Image from "next/image";
 
-export interface ICart {}
+// export interface ICart {}
 
-export const Cart: FC<ICart> = () => {
+export const Cart: FC = () => {
   const itemCount = 0;
 
   const fee = 1;

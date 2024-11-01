@@ -5,9 +5,9 @@ import { FC, useEffect, useRef, useState } from "react";
 import { NavItem } from "./NavItem";
 import { useOnClickOutside } from "@/hooks/use-on-click-outside";
 
-export interface INavItems {}
+// export interface INavItems {}
 
-export const NavItems: FC<INavItems> = () => {
+export const NavItems: FC = () => {
   const [activeIndex, setActiveIndex] = useState<null | number>(null);
 
   useEffect(() => {

@@ -5,9 +5,9 @@ import { NavItems } from "./NavItems";
 import { buttonVariants } from "../ui/Button";
 import { Cart } from "./Cart";
 
-export interface INavbar {}
+// export interface INavbar {}
 
-export const Navbar: FC<INavbar> = () => {
+export const Navbar: FC = () => {
   const user = null;
 
   return (
