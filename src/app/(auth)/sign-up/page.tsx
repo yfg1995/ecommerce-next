@@ -25,8 +25,11 @@ const Page: FC = () => {
   });
 
   const { data } = trpc.anyApiRoute.useQuery();
+  console.log(data);
 
-  const onSubmit = ({ email, password }: TAuthCredentialsValidator) => {};
+  const onSubmit = ({ email, password }: TAuthCredentialsValidator) => {
+    console.log(email, password);
+  };
 
   return (
     <>
