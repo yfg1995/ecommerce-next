@@ -9,11 +9,11 @@ import { Label } from "@/components/ui/label";
 import { ArrowRight } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { trpc } from "@/trpc/client";
 import {
   AuthCredentialsValidator,
   TAuthCredentialsValidator,
 } from "@/lib/validators/account-credentials-validator";
-import { trpc } from "@/trpc/client";
 
 const Page: FC = () => {
   const {
