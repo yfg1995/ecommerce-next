@@ -1,13 +1,10 @@
-import { FC } from "react";
 import { Container } from "../Container";
 import Link from "next/link";
 import { NavItems } from "./NavItems";
 import { buttonVariants } from "../ui/Button";
 import { Cart } from "./Cart";
 
-// export interface INavbar {}
-
-export const Navbar: FC = () => {
+export const Navbar = async () => {
   const user = null;
 
   return (
@@ -27,7 +24,7 @@ export const Navbar: FC = () => {
 
             <div className="ml-auto flex items-center">
               <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6 font-bold">
-                {user ?? (
+                {user ? null : (
                   <Link
                     href="/sign-in"
                     className={buttonVariants({ variant: "ghost" })}
@@ -36,7 +33,7 @@ export const Navbar: FC = () => {
                   </Link>
                 )}
 
-                {user ?? (
+                {user ? null : (
                   <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
                 )}
 

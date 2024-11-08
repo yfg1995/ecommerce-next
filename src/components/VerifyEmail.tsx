@@ -2,6 +2,7 @@ import { trpc } from "@/trpc/client";
 import { Loader2, XCircle } from "lucide-react";
 import Link from "next/link";
 import { buttonVariants } from "./ui/Button";
+import Image from "next/image";
 
 interface IVerifyEmail {
   token: string;
@@ -27,8 +28,14 @@ const VerifyEmail = ({ token }: IVerifyEmail) => {
   if (data?.success) {
     return (
       <div className="flex h-full flex-col items-center justify-center">
-        <div className="relative mb-4 text-muted-foreground">
-          <img src="/email-sent.png" alt="email sent image" />
+        <div className="relative mb-4 h-60 w-[500px] text-muted-foreground">
+          <Image
+            src="/email-sent.png"
+            alt="email sent image"
+            fill
+            priority
+            sizes="(max-width: 1920px), 100% 100%"
+          />
         </div>
 
         <h3 className="font-semibold text-2xl">You&apos;re all set!</h3>
