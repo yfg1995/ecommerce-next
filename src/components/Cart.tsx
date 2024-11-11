@@ -1,4 +1,10 @@
 import { FC } from "react";
+import { ShoppingCart } from "lucide-react";
+import { Separator } from "@radix-ui/react-separator";
+import { formatPrice } from "@/lib/utils";
+import Link from "next/link";
+import Image from "next/image";
+import { buttonVariants } from "./ui/Button";
 import {
   Sheet,
   SheetContent,
@@ -6,13 +12,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "../ui/sheet";
-import { ShoppingCart } from "lucide-react";
-import { Separator } from "@radix-ui/react-separator";
-import { formatPrice } from "@/lib/utils";
-import Link from "next/link";
-import { buttonVariants } from "../ui/Button";
-import Image from "next/image";
+} from "./ui/sheet";
 
 // export interface ICart {}
 
