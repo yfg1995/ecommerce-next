@@ -68,6 +68,7 @@ export const NavItem: FC<INavItem> = ({
                           alt="product category image"
                           fill
                           className="object-cover object-center"
+                          sizes="(max-width: 1920px) 100%, 100%"
                         />
                       </div>
 

@@ -34,7 +34,7 @@ const VerifyEmail = ({ token }: IVerifyEmail) => {
             alt="email sent image"
             fill
             priority
-            sizes="(max-width: 1920px), 100% 100%"
+            sizes="(max-width: 1920px) 100%, 100%"
           />
         </div>
 

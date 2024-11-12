@@ -1,4 +1,5 @@
 import { Container } from "@/components/Container";
+import ProductReel from "@/components/Products/ProductReel";
 import { Button, buttonVariants } from "@/components/ui/Button";
 import { ArrowDownToLine, CheckCircle, Leaf } from "lucide-react";
 import Link from "next/link";
@@ -29,7 +30,7 @@ export default function Home() {
     <>
       <Container>
         <div className="py-20 mx-auto text-center flex flex-col items-center max-w-3xl">
-          <h1 className="text-4xl font-bold tracking-tight text-grey-900 sm:text-6xl">
+          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
             Homepage Heading
           </h1>
 
@@ -48,6 +49,12 @@ export default function Home() {
             <Button variant="ghost">Our quality promise &rarr;</Button>
           </div>
         </div>
+
+        <ProductReel
+          title="Brand new"
+          href="/products"
+          query={{ sort: "desc", limit: 4 }}
+        />
       </Container>
 
       <section className="border-t border-gray-200 bg-gray-50">
